@@ -53,6 +53,54 @@ nav {
     margin-right: 100px;
 }
 
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.intro {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro-img {
+    background-image: url("../images/bg_img.jpg");
+    width: 965px;
+    height: 620px;
+}
+
+.intro .intro-text {
+    position: absolute;
+    font-size: 62px;
+    right: 750px;
+    top: 220px;
+}
+
+.intro-contacts {
+    background-color: #ffcc01;
+    max-width: 590px;
+    position: absolute;
+    right: 170px;
+    top: 614px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.intro-contacts i {
+    color: #fff;
+    margin-right: 30px;
+}
+
+.intro-contacts p {
+    font-size: 18px;
+    margin-right: 60px;
+}
+
+/*Media*/
+
 @media screen and (max-width: 765px) {
     .toggle {
         clear: both;
@@ -79,6 +127,7 @@ nav {
     #checkbox-menu:checked + label .touch {
         height: 350px;
     }
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -87,6 +136,7 @@ nav {
         height: 0;
         transition: height .3s linear;
     }
+
     .menu li {
         display: flex;
         align-self: center;
@@ -94,12 +144,14 @@ nav {
         opacity: 0;
         visibility: hidden;
     }
+
     .menu li a {
         width: 95%;
         text-align: center;
         align-self: center;
         align-content: center;
     }
+
     .menu li a .logo {
         font-size: 20px;
         margin-right: 0;
@@ -108,7 +160,33 @@ nav {
     .menu li a .contacts {
         margin-right: 0;
     }
-
+    .intro {
+        margin-top: 0;
+        display: block;
+        max-width: 100%;
+    }
+    .intro-img {
+        background-position: bottom 0 right 190px;
+    }
+    .intro .intro-text {
+        position: relative;
+        font-size: 35px;
+        right: -10px;
+        top: 10px;
+    }
+    .intro .intro-contacts {
+        right: 0;
+        top: -60px;
+        padding: 23px 10px;
+        position: relative;
+    }
+    .intro-contacts i {
+        margin-right: 10px;
+    }
+    .intro-contacts p {
+        font-size: 13px;
+        margin-right: 0;
+    }
 }
 
 
