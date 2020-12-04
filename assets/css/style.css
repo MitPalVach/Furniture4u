@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto Thin', sans-serif;
+    font-family: Rockwell, sans-serif;
 }
 
 body, html {
@@ -44,13 +44,13 @@ nav {
     border-radius: 3px;
 }
 
-.menu li a .logo {
+.menu li a.logo {
     font-size: 25px;
-    margin-right: 240px;
+    margin-right: 180px;
 }
 
-.menu li a .contacts {
-    margin-right: 100px;
+.menu li a.contacts {
+    margin-right: 90px;
 }
 
 .wrapper {
@@ -83,7 +83,7 @@ nav {
     max-width: 590px;
     position: absolute;
     right: 170px;
-    top: 614px;
+    top: 611px;
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
@@ -98,6 +98,52 @@ nav {
     font-size: 18px;
     margin-right: 60px;
 }
+
+.stats {
+    display: flex;
+    margin-top: 130px;
+}
+
+.stats-line {
+    display: flex;
+}
+
+.stats-text {
+    padding: 40px;
+}
+
+.stats-text h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.stats-text p {
+    margin-top: 50px;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #f6f5f4;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats-square {
+    font-size: 40px;
+    color: #ffcc01;
+    margin-bottom: 15px;
+}
+
+.square-text {
+    font-size: 14px;
+}
+
 
 /*Media*/
 
@@ -152,52 +198,72 @@ nav {
         align-content: center;
     }
 
-    .menu li a .logo {
+    .menu li a.logo {
         font-size: 20px;
         margin-right: 0;
     }
 
-    .menu li a .contacts {
+    .menu li a.contacts {
         margin-right: 0;
     }
+
     .intro {
         margin-top: 0;
         display: block;
         max-width: 100%;
     }
+
     .intro-img {
         background-position: bottom 0 right 190px;
     }
+
     .intro .intro-text {
         position: relative;
         font-size: 35px;
         right: -10px;
         top: 10px;
     }
+
     .intro .intro-contacts {
         right: 0;
         top: -60px;
         padding: 23px 10px;
         position: relative;
     }
+
     .intro-contacts i {
         margin-right: 10px;
     }
+
     .intro-contacts p {
         font-size: 13px;
         margin-right: 0;
     }
+
+    .stats {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .stats-text {
+        padding: 10px;
+    }
+
+    .stats-text h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .stats-text p {
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .square {
+        height: 140px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
