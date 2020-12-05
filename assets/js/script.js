@@ -1,5 +1,3 @@
-//
-//
 // let step_block_1 = document.getElementById('step_block_1');
 // let step_border_1 = document.getElementById('step_border_1');
 //
