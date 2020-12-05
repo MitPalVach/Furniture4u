@@ -144,6 +144,97 @@ nav {
     font-size: 14px;
 }
 
+.furniture {
+    background: #f6f5f4;
+    padding: 60px 0;
+}
+
+.furn h2 {
+    margin-bottom: 85px;
+    font-size: 40px;
+}
+
+.card {
+    max-width: 348px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.card-container {
+    padding: 25px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.card-info .info {
+    margin-top: 25px;
+}
+
+.card-info .money {
+    font-size: 18px;
+    color: #ffcc01;
+}
+
+.card:hover {
+    background-color: #fafaf9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 30px;
+}
+
+.furn input[type=text] {
+    margin-top: 50px;
+    width: 300px;
+    height: 70px;
+    border: none;
+    background-image: url('../images/icon_src.png');
+    outline: none;
+    padding-left: 62px;
+    background-position: 27px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.furn input[type=submit] {
+    width: 115px;
+    border: none;
+    height: 70px;
+    background: #ffcc01;
+    font-size: 15px;
+    margin-left: -4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+.all {
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 40px;
+    margin-top: 52px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttons-search {
+    display: flex;
+}
+
 
 /*Media*/
 
@@ -262,6 +353,29 @@ nav {
 
     .square {
         height: 140px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+
+    .furn input[type=text] {
+        margin-top: 20px;
+        width: 170px;
+    }
+
+    .buttons-search {
+        flex-direction: column;
+        margin-left: 4%;
+    }
+
+    .all {
+        background: #ffffff;
+        margin-top: 10px;
+        margin-left: 0;
     }
 }
 
