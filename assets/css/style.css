@@ -434,12 +434,14 @@ nav {
     position: relative;
     left: 100px;
     bottom: 50px;
+    cursor: pointer;
 }
 
 .hall {
     position: relative;
     left: 260px;
     bottom: 50px;
+    cursor: pointer;
 }
 
 .add_line h3 {
@@ -464,7 +466,7 @@ nav {
     position: relative;
     left: 100px;
     bottom: 50px;
-
+    cursor: pointer;
 }
 
 .show_more {
@@ -475,18 +477,75 @@ nav {
     margin-left: 130px;
     color: #ffffff;
     margin-top: 60px;
+    cursor: pointer;
 }
 
+footer {
+    background: #1f373d;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
 
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer_block h3 {
+    font-size: 40px;
+}
 
+.footer_search input[type=text] {
+    width: 442px;
+    height: 70px;
+    color: #919eb1;
+    padding-left: 27px;
+    font-size: 15px;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 94%;
+}
 
+hr {
+    opacity: .3;
+    margin-top: 47px;
+    margin-bottom: 70px;
+}
 
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+}
 
+.footer_link {
+    display: flex;
+    flex-direction: column;
+}
 
+.footer_links_logo {
+    font-size: 25px;
+    margin-right: 26%;
+}
 
+.footer_link p {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #919eb1;
+    margin-bottom: 35px;
+}
 
+.footer_link a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
 
+.footer_link a:hover {
+    opacity: .4;
+}
 
 
 /*Media*/
@@ -711,9 +770,38 @@ nav {
         margin-left: 15%;
         margin-top: 20px;
     }
+
+    .footer_block {
+        flex-direction: column;
+    }
+
+    .footer_logo h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .footer_search input[type=text] {
+        width: 80%;
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .footer_search {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_links {
+        flex-wrap: wrap;
+        margin-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer_links h4 {
+        font-size: 22px;
+    }
+
 }
-
-
 
 
 
